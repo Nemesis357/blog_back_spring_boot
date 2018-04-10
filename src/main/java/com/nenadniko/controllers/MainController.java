@@ -38,7 +38,7 @@ public class MainController {
 	
 	@GetMapping("/")
 	public String mainCtrl() {
-		return "Welcome to REST Server!";
+		return "Welcome to TURBO REST Server!";
 	}
 
 	@PostMapping("/create")
@@ -84,13 +84,12 @@ public class MainController {
 
 		post.setImageUrl(post.getImageUrl() + "/" + id + ".*");
 		
-		Path path = Paths.get(file.getAbsolutePath());
-	    ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
-
-	    return post;
+		//Path path = Paths.get(file.getAbsolutePath());
+	    //ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
 
 		return post;
 	}
+
 }
 
 

@@ -8,8 +8,4 @@ import com.nenadniko.entity.PostDB;
 @Repository
 public interface PostRepository extends JpaRepository<PostDB, Integer> {
 	PostDB findByUniqueKey(Long unique_key);
-	
-	
-	 //@Query("SELECT a FROM Article a WHERE a.title=:title and a.category=:category")
-	 //PostDB post findPostById(@Param("uniqueKey") String title);
 }
